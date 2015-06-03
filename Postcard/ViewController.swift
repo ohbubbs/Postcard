@@ -12,8 +12,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var enterMessageTextField: UITextField!
+    
     @IBOutlet weak var mailButton: UIButton!
     
     
@@ -34,7 +36,7 @@ class ViewController: UIViewController {
         // Adding a Comment here to test commits
         
         nameLabel.hidden = false
-        nameLabel.text = "Dear "+enterNameTextField.text+","
+        nameLabel.text = enterNameTextField.text
         nameLabel.textColor = UIColor.blueColor()
         
         messageLabel.hidden = false
